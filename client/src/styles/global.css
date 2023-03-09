@@ -17,3 +17,25 @@ p, li, td, th, blockquote, label, input, textarea, select {
 p {
   margin-bottom: 1rem;
 }
+
+
+/* TRANSACTIONS PAGE */
+
+.net-worth {
+  width: 20%;
+  align-items: center;
+}
+
+.recent-transactions text {
+  display: flex;
+  justify-content: space-between 5px;
+}
+
+.recent-transactions {
+  width: 20%;
+  align-items: center;
+}
+
+
+
+
