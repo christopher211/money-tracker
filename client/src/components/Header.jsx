@@ -1,7 +1,7 @@
-import { useState } from "react"
+// import { useState } from "react"
 
 const Header = () => {
-  const [ showDropDown, setShowDropDown ] = useState(false)
+  // const [ showDropDown, setShowDropDown ] = useState(false)
 
   return (
     <header className="px-2 pb-0 mb-0" style={{ borderBottom: "1px solid #333" }}>
@@ -14,10 +14,16 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                <a className="nav-link active" aria-current="page" href="/">Dashboard</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">About Page</a>
+                <a className="nav-link active" aria-current="page" href="/Analytics">Analytics</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="/Transactions">Transactions</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/Account">Account</a>
               </li>
             </ul>
           </div>
