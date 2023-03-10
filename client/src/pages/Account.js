@@ -1,8 +1,13 @@
+import { Wrapper } from "../components";
+import SignIn from "../components/AccountPage/SignIn";
 
 const Account = (props) => {
 
   return (
-    <h1>Account</h1>
+    <Wrapper>
+      <h1>Account</h1>
+      <SignIn />
+    </Wrapper>
   )
 }
 

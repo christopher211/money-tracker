@@ -15,7 +15,7 @@ function RecentTransactions() {
             <input type="text" class="form-control" placeholder=""></input>
             <text>Amount</text>
             <input type="text" class="form-control" placeholder="ex. + or - $100"></input>
-            <button>Edit</button>
+            <button class="btn">Edit</button>
           </li>
         </ul>
       </div>

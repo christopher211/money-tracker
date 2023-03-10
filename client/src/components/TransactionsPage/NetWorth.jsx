@@ -9,12 +9,12 @@ function NetWorthTable() {
         <div class="card-header">
           Net Worth:
         </div>
-        
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Cash:
           <input type="text" class="form-control" placeholder=""></input></li>
           <li class="list-group-item">Bank:
           <input type="text" class="form-control" placeholder=""></input></li>
+          <button class="btn">Edit</button>
         </ul>
       </div>
     </div>
