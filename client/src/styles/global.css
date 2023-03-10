@@ -1,15 +1,44 @@
+:root {
+  --Sunset: #ed6a5a;
+  --Dark: #202020; 
+}
 
-/* === typography ====== */ 
-
-h1, h2, h3, h4, h5, h6, p, li, td, th, blockquote, label, input, textarea, select {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+td,
+th,
+blockquote,
+label,
+input,
+textarea,
+select {
   color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
 }
 
-p, li, td, th, blockquote, label, input, textarea, select {
+p,
+li,
+td,
+th,
+blockquote,
+label,
+input,
+textarea,
+select {
   font-size: 1.2rem;
   line-height: 165%;
 }
@@ -19,23 +48,109 @@ p {
 }
 
 
+
+
+
 /* TRANSACTIONS PAGE */
+
 
 .net-worth {
   width: 20%;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .recent-transactions text {
   display: flex;
   justify-content: space-between 5px;
+  align-items: flex-start;
 }
 
 .recent-transactions {
   width: 20%;
-  align-items: center;
+  align-items: flex-start;
+}
+
+h1 {
+
+  color: white;
+  text-align: right;
+}
+
+.net-worth .card-header, .recent-transactions .card-header, .new-transaction .card-header {
+  background-color: var(--Dark);
+  color: white;
+  border: 3px solid gray;
+
+}
+
+.net-worth .list-group-item, .recent-transactions .list-group-item, .new-transaction .card-body {
+  background-color: black;
+  color: white;
+}
+
+.net-worth .btn, .recent-transactions .btn, .new-transaction .btn {
+  background-color: #ed6a5a;
+  padding: 5px;
+}
+
+.net-worth .btn:hover, .recent-transactions .btn:hover{
+  background-color: var(--Dark);
+  color: #ed6a5a;
 }
 
 
 
 
+
+/* ANALYTICS PAGE */
+
+
+.flexbox-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.yearly .card-header, .monthly .card-header, .monthly-expenses .card-header {
+  background-color: var(--Dark);
+  color: white;
+  border: 3px solid gray;
+
+}
+
+.yearly .list-group-item, .monthly .list-group-item, .monthly-expenses .list-group-item {
+  background-color: black;
+  color: white;
+}
+
+.yearly .btn, .monthly .btn, .monthly-expenses .btn {
+  background-color: #ed6a5a;
+  padding: 5px;
+}
+
+.yearly .btn:hover, .monthly .btn:hover, .monthly-expenses .btn:hover{
+  background-color: var(--Dark);
+  color: #ed6a5a;
+}
+
+/* ACCOUNT PAGE */
+
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border: 5px solid var(--Sunset);
+  padding: 50px;
+}
+
+.sign-in .btn {
+  background-color: #ed6a5a;
+  padding: 5px;
+}
+
+.sign-in .btn:hover{
+  background-color: var(--Dark);
+  color: #ed6a5a;
+}
