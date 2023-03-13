@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <Wrapper>
         <Header />
-        <div className="pt-3 px-4">
+        <div>
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/Analytics" element={<Analytics />} />

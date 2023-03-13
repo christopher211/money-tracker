@@ -4,7 +4,7 @@ const Header = () => {
   // const [ showDropDown, setShowDropDown ] = useState(false)
 
   return (
-    <header className="px-2 pb-0 mb-0" style={{ borderBottom: "1px solid #333" }}>
+    <header className=" Nav px-2 pb-0 mb-0" style={{ borderBottom: "1px solid #333" }}>
       <nav className="navbar navbar-dark navbar-expand-md bg-body-secondary" data-bs-theme="dark">
         <div className="container-fluid">
           {/* <a className="navbar-brand" href="##">Navbar</a> */}
