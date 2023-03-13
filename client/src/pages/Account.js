@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Wrapper } from "../components";
-
 import SignIn from "../components/AccountPage/SignIn";
+import image from "../components/images/black.svg"
 import { getMe } from "../utils/APIs";
 import Auth from "../utils/auth";
 
@@ -40,6 +40,7 @@ const Account = (props) => {
   console.log(Auth.loggedIn());
 
   return (
+    
     <Wrapper>
       <h1>Account</h1>
       {/* <SignIn /> */}

@@ -1,6 +1,11 @@
 :root {
   --Sunset: #ed6a5a;
   --Dark: #202020; 
+  
+}
+
+* {
+  background-color: rgb(17, 17, 17);
 }
 
 h1,
@@ -19,6 +24,8 @@ input,
 textarea,
 select {
   color: white;
+
+  
 }
 
 h1,
@@ -28,6 +35,7 @@ h4,
 h5,
 h6 {
   font-weight: bold;
+  
 }
 
 p,
@@ -71,7 +79,7 @@ p {
 }
 
 h1 {
-
+  padding: 20px;
   color: white;
   text-align: right;
 }
@@ -84,7 +92,7 @@ h1 {
 }
 
 .net-worth .list-group-item, .recent-transactions .list-group-item, .new-transaction .card-body {
-  background-color: black;
+  background-color: var(--Dark);
   color: white;
 }
 
@@ -119,7 +127,7 @@ h1 {
 }
 
 .yearly .list-group-item, .monthly .list-group-item, .monthly-expenses .list-group-item {
-  background-color: black;
+  background-color: var(--Dark);
   color: white;
 }
 
@@ -142,6 +150,7 @@ h1 {
   align-items: center;
   width: 50%;
   border: 5px solid var(--Sunset);
+  border-radius: 25px;
   padding: 50px;
 }
 
