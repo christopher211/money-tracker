@@ -1,6 +1,7 @@
 const { Expenses, Monthly, Yearly } = require("../models");
 const { User } = require("../models");
 
+
 // create new monthly analytic stats
 const createMonthly = async (req, res) => {
   try {
@@ -88,60 +89,14 @@ const updateMonthly = async (req, res) => {
 
 
     )
+  }
+}
 
 
 
-
-
-
-
-
-
-
-
-
-  //   //look for existing monthly report
-  //   const monthlyReport = await Monthly.findOne({user});
-
-  //   //if there is no report make a new one
-  //   if (!monthlyReport) {monthlyReport = new Monthly({user});
-  // }
-
-  // monthlyReport.Monthly_Expenses = Monthly_Expenses;
-  // monthlyReport.Monthly_Income = Monthly_Income;
-  // monthlyReport.Monthly_Savings = Monthly_Savings;
-  // monthlyReport.Monthly_Balance = Monthly_Balance;
-
-
-
-  // await monthlyReport.save();
-
-  // await updateUserStats(user, Monthly_Balance, Monthly_Expenses, Monthly_Income, Monthly_Savings);
-
-  // res.status(200).json(monthlyReport);
-  // } catch (err) {
-  //   console.log(err);
-  //   res.status(400).json(err);
-  // }
-
-
-
-
-  
-
-
-
-  //   const newMonthly = await Monthly.create({
-  //     Monthly_Expenses,
-  //     Monthly_Income,
-  //     Monthly_Savings,
-  //     Monthly_Balance,
-  //     user,
-  //   });
-
-    
-
-
-
-
-  // }
+ module.exports = {
+    updateMonthly,
+    getMonthlyById,
+    gettAllMonthly,
+    createMonthly,
+  }
