@@ -1,8 +1,14 @@
 import "../../styles/global.css"
 import { Wrapper } from "../../components";
+import { useEffect, useState } from "react";
+import { useAppCtx } from "../../utils/AppContext";
 
 
 function Yearly() {
+
+
+
+  
 
   return (
     <Wrapper>

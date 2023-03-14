@@ -1,8 +1,54 @@
 import "../../styles/global.css"
 import { Wrapper } from "../../components";
+import { useEffect, useState } from "react";
+import { useAppCtx } from "../../utils/AppContext";
 
 
 function Monthly() {
+  const { user } = useAppCtx();
+
+  const [monthly, setMonthly] = useState({
+    income: "",
+    expenses: "",
+    savings: "",
+    balance: "",
+  });
+  const [updateResult, setUpdateResult] = useState("");
+
+  const handleInputChange = (e) => {
+    setMonthly({ ...monthly, [e.target.name]: e.target.value });
+
+    console.log(monthly);
+
+  };
+
+  const update = async (e) => {
+    e?.preventDefault();
+    const response = await fetch("/api/monthly", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(monthly),
+    })
+    if (!resp.ok) {
+      return setUpdateResult("Failed to update");
+    }
+    setUpdateResult("success")
+  };
+
+  useEffect(() => {
+    if (user) setMonthly({ ...monthly, user: user._id });{
+
+
+
+
+
+
+
+
+
+
 
   return (
     <Wrapper>
