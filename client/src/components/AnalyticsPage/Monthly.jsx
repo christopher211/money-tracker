@@ -26,10 +26,10 @@ function Monthly() {
           </li>
           <li class="list-group-item">
           <span class="input-group-text" id="basic-addon1">Balance</span>
-            <input type="text" class="form-control" placeholder="$" aria-label="Balance" aria-describedby="basic-addon1"></input>
+            <input type="text" class="form-control" placeholder="$" aria-label="Balance" aria-describedby="basic-addon1"></input> 
           </li>
+          <button class="btn">Submit</button>
         </ul>
-        <button class="btn">Submit</button>
       </div>
       </div>
     </Wrapper>
