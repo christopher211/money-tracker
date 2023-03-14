@@ -87,16 +87,20 @@ function Expenses() {
           </li>
           <li class="list-group-item">
           <span class="input-group-text" id="basic-addon1">Misc.</span>
+
             <input type="text" class="form-control" placeholder="$" aria-label="Balance" aria-describedby="basic-addon1" value={expenses.misc} onChange={handleInputChange} name="misc"></input>
           </li>
           <li class="list-group-item">
           <span class="input-group-text" id="basic-addon1">Total</span>
             <input type="text" class="form-control" placeholder="$" aria-label="Balance" aria-describedby="basic-addon1" value={expenses.total} onChange={handleInputChange} name="total"></input>
           </li>
+          <button class="btn">Submit</button>
         </ul>
+
         </form>
         <button class="btn">Submit</button>
       </div>
+      
       </div>
     </Wrapper>
   );

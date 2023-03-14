@@ -71,10 +71,14 @@ function Yearly() {
               <span class="input-group-text" id="basic-addon1">Balance</span>
               <input type="text" class="form-control" placeholder="$" aria-label="Balance" aria-describedby="basic-addon1" value={yearly.balance} onChange={handleInputChange} name="balance"></input>
             </li>
+            <button class="btn">Submit</button>
           </ul>
+
           </form>
           <button class="btn">Submit</button>
+
         </div>
+        
       </div>
     </Wrapper>
   );

@@ -40,7 +40,7 @@ const Account = (props) => {
 
   return (
     
-    <Wrapper>
+    <>
       <h1>Account</h1>
       {/* <SignIn /> */}
       {Auth.loggedIn() ? (
@@ -48,7 +48,7 @@ const Account = (props) => {
       ) : (
         <SignIn />
       )}
-    </Wrapper>
+    </>
   );
 };
 

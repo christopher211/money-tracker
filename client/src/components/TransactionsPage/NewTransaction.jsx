@@ -31,8 +31,8 @@ function NewTransaction() {
           <div class="card">
             <input type="text" class="form-control" placeholder="Note"></input>
           </div>
-          <button class="btn">Submit</button>
         </div>
+        <button class="btn">Submit</button>
       </div>
     </div>
   );

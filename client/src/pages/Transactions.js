@@ -10,9 +10,9 @@ const Transactions = (props) => {
       <h1>Transactions</h1>
       <div class="flexbox-container">
       <Navigation  class="flexbox-item"/>
-        <NetWorthTable />
-        <RecentTransactions />
-        <NewTransaction />
+        <NetWorthTable class="flexbox-item" />
+        <RecentTransactions class="flexbox-item"/>
+        <NewTransaction class="flexbox-item"/>
       </div>
     </Wrapper>
   );
