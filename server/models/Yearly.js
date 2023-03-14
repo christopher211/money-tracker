@@ -20,7 +20,11 @@ const yearlySchema = new Schema({
   yearly_Balance: { 
     type: DataTypes.DECIMAL,
     required: true,
-  }
+  },
+   user: {
+    type: Schema.Types.ObjectId,
+    ref: "User",
+  },
 
 });
 
