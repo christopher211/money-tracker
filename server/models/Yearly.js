@@ -5,23 +5,16 @@ const yearlySchema = new Schema({
     type: DataTypes.INTEGER,
     required: true,
   },
-  yearly_Expenses: {
+  expense: {
     type: DataTypes.DECIMAL,
     required: true,
   },
-  yearly_Income: {
+  income: {
     type: DataTypes.DECIMAL,
     required: true,
   },
-  yearly_Savings: {
-    type: DataTypes.DECIMAL,
-    required: true,
-  },
-  yearly_Balance: { 
-    type: DataTypes.DECIMAL,
-    required: true,
-  }
-
+ 
+  transaction_id: { type: DataTypes.INTEGER, required: true },
 });
 
 
