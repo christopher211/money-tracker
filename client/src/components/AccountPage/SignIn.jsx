@@ -100,7 +100,7 @@ const SignIn = () => {
   };
 
   return (
-    <Wrapper className="sign-in">
+    <Wrapper>
       <Tabs
         id="controlled-tab-example"
         activeKey={tab}

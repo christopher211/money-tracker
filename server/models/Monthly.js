@@ -14,6 +14,26 @@ const monthlySchema = new Schema({
     required: true,
   },
 
+
+  Monthly_Savings: {
+    type: DataTypes.DECIMAL,
+    required: true,
+  },
+  Monthly_Balance: { 
+    type: DataTypes.DECIMAL,
+    required: true,
+  },
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: "User",
+  },
+
+});
+
+
+
+
+
   transaction_id: { type: DataTypes.INTEGER, required: true },
 
 });

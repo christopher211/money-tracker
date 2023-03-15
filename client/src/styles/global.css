@@ -8,45 +8,15 @@
   background-color: rgb(17, 17, 17);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-li,
-td,
-th,
-blockquote,
-label,
-input,
-textarea,
-select {
+h1, h2, h3, h4, h5, h6, p, li, td, th, blockquote, label, input, textarea, select {
   color: white;
-
-  
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  
 }
 
-p,
-li,
-td,
-th,
-blockquote,
-label,
-input,
-textarea,
-select {
+p, li, td, th, blockquote, label, input, textarea, select {
   font-size: 1.2rem;
   line-height: 165%;
 }
@@ -55,11 +25,141 @@ p {
   margin-bottom: 1rem;
 }
 
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.page-name {
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+.page-name:hover {
+  background-color: none;
+  color:#ed6a5a;
+  font-weight: bold;
+}
+
+
+
+.page-name {
+  position: relative;
+}
+
+.page-name::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ed6a5a;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+  .page-name:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  
+}
+
+
+
+.moneybag {
+  padding-top: 10px;
+}
+
+
+
+
+/* NAVIGATION */
+
+
+
+
+.nav {
+  border: 5px solid rgba(128, 128, 128, 0);
+  height: 750px;
+  background-image: url("../components/images/gray-background.jpeg");
+  height: 100%;  
+  width: 15%;  
+  position: fixed; 
+  z-index: 1; 
+  top: 10%; 
+  left: 0; 
+  transition: .5s ease; 
+  overflow-x: hidden; 
+  padding-top: 20px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 200px;
+  border: solid;
+}
+
+
+.nav-item .nav-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 30px;
+}
+
+.nav-item .nav-link:hover {
+  background-color: none;
+  color:#ed6a5a;
+  font-weight: bold;
+}
+
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ed6a5a;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+  .nav-link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  
+}
 
 
 
 
 /* TRANSACTIONS PAGE */
+
+.flexbox-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flexbox-item {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 .net-worth {
@@ -71,6 +171,7 @@ p {
   display: flex;
   justify-content: space-between 5px;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .recent-transactions {
@@ -83,6 +184,29 @@ h1 {
   color: white;
   text-align: right;
 }
+
+.transaction-nav {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  text-align: center;
+  background-color:#202020;
+  flex-wrap: wrap;
+  
+}
+
+.transaction-nav-item {
+  background-color:#202020;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  padding-right:30px;
+  padding-bottom: 1px;
+  padding-top: 12px;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
 
 .net-worth .card-header, .recent-transactions .card-header, .new-transaction .card-header {
   background-color: var(--Dark);
@@ -116,7 +240,9 @@ h1 {
 .flexbox-container {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
 }
 
 .yearly .card-header, .monthly .card-header, .monthly-expenses .card-header {
@@ -131,9 +257,16 @@ h1 {
   color: white;
 }
 
+.monthly-expenses .list-group-item {
+  display: flex;
+}
+
+
 .yearly .btn, .monthly .btn, .monthly-expenses .btn {
   background-color: #ed6a5a;
   padding: 5px;
+  
+  
 }
 
 .yearly .btn:hover, .monthly .btn:hover, .monthly-expenses .btn:hover{
@@ -144,7 +277,7 @@ h1 {
 /* ACCOUNT PAGE */
 
 
-.sign-in {
+/* .sign-in {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,14 +285,15 @@ h1 {
   border: 5px solid var(--Sunset);
   border-radius: 25px;
   padding: 50px;
+  
 }
 
-.sign-in .btn {
+.sign-in #login-btn, #signup-button {
   background-color: #ed6a5a;
   padding: 5px;
 }
 
-.sign-in .btn:hover{
+.sign-in #login-btn:hover{
   background-color: var(--Dark);
   color: #ed6a5a;
-}
+} */

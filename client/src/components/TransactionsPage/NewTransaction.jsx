@@ -6,14 +6,14 @@ function NewTransaction() {
     <div class="new-transaction">
       <div class="card text-center">
         <div class="card-header">
-          <ul class="nav nav-pills card-header-pills">
-            <li class="nav-item">
+          <ul class="transaction-nav nav-pills card-header-pills">
+            <li class="transaction-nav-item">
               <button class="btn">Expense</button>
             </li>
-            <li class="nav-item">
+            <li class="transaction-nav-item">
               <button class="btn">Transfer</button>
             </li>
-            <li class="nav-item">
+            <li class="transaction-nav-item">
               <button class="btn">Income</button>
             </li>
           </ul>
@@ -31,8 +31,8 @@ function NewTransaction() {
           <div class="card">
             <input type="text" class="form-control" placeholder="Note"></input>
           </div>
-          <button class="btn">Submit</button>
         </div>
+        <button class="btn">Submit</button>
       </div>
     </div>
   );

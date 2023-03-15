@@ -37,7 +37,14 @@ const expensesSchema = new Schema({
     type: DataTypes.DECIMAL,
     required: true,
   },
-
+  total: {
+    type: DataTypes.DECIMAL,
+    required: true,
+  },
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: "User",
+  },
 });
 
 

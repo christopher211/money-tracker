@@ -14,8 +14,8 @@ function NetWorthTable() {
           <input type="text" class="form-control" placeholder=""></input></li>
           <li class="list-group-item">Bank:
           <input type="text" class="form-control" placeholder=""></input></li>
-          <button class="btn">Edit</button>
         </ul>
+        <button class="btn">Edit</button>
       </div>
     </div>
 
