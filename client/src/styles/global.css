@@ -1,6 +1,7 @@
 :root {
-  --Sunset: #ed6a5a;
+  --Sunset: #ed6b5a;
   --Dark: #202020;
+  --Cerulean: rgb(51, 124, 160);
 }
 
 * {
@@ -56,7 +57,7 @@ p {
 header {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .page-name {
@@ -100,7 +101,9 @@ header {
 
 /* NAVIGATION */
 
-.nav {
+
+
+/* .navigation {
   border: 5px solid rgba(128, 128, 128, 0);
   height: 750px;
   background-image: url("../components/images/gray-background.jpeg");
@@ -120,10 +123,18 @@ header {
   justify-content: space-around;
   padding-bottom: 200px;
   border: solid;
-}
+} */
 
-.nav-item .nav-link {
-  background-color: rgba(255, 255, 255, 0.1);
+.navigation {
+  
+  padding-top: 21px;
+  align-items: center;
+
+  
+} 
+
+ .nav-item .nav-link {
+  
   color: white;
   font-size: 30px;
 }
@@ -155,7 +166,7 @@ header {
 .nav-link:hover::before {
   transform-origin: left;
   transform: scaleX(1);
-}
+} */
 
 /* TRANSACTIONS PAGE */
 
@@ -231,7 +242,7 @@ h1 {
 
 .net-worth .btn,
 .recent-transactions .btn,
-.new-transaction .btn {
+.new-transaction .btn, button {
   background-color: #ed6a5a;
   padding: 5px;
 }
@@ -251,38 +262,13 @@ h1 {
   flex-wrap: wrap;
 }
 
-.yearly .card-header,
-.monthly .card-header,
-.monthly-expenses .card-header {
-  background-color: var(--Dark);
-  color: white;
-  border: 3px solid gray;
+.analytics-chart {
+  border: 5px solid red;
 }
 
-.yearly .list-group-item,
-.monthly .list-group-item,
-.monthly-expenses .list-group-item {
-  background-color: var(--Dark);
-  color: white;
-}
 
-.monthly-expenses .list-group-item {
-  display: flex;
-}
 
-.yearly .btn,
-.monthly .btn,
-.monthly-expenses .btn {
-  background-color: #ed6a5a;
-  padding: 5px;
-}
 
-.yearly .btn:hover,
-.monthly .btn:hover,
-.monthly-expenses .btn:hover {
-  background-color: var(--Dark);
-  color: #ed6a5a;
-}
 
 /* ACCOUNT PAGE */
 

@@ -8,9 +8,8 @@ const Dashboard = (props) => {
     <>
     <Wrapper>
     <h1>Dashboard</h1>
-    <div class="flexbox-container ">
-    <Navigation  class="flexbox-item"/>
-    
+    <div class="flexbox-container">
+  
 
     </div>
   </Wrapper>
