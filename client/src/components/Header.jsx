@@ -1,5 +1,5 @@
 import icon from "./images/cash-favicon.png"
-import Navigation from "../components/Navigation"
+
 
 const Header = () => {
 
