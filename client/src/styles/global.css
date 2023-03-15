@@ -100,7 +100,10 @@ header {
 
 /* NAVIGATION */
 
-.nav {
+
+
+
+.navigation {
   border: 5px solid rgba(128, 128, 128, 0);
   height: 750px;
   background-image: url("../components/images/gray-background.jpeg");
