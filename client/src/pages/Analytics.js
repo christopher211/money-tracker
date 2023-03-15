@@ -10,9 +10,9 @@ const Analytics = (props) => {
   return (
     <Wrapper>
       <h1>Analytics</h1>
-      <div class="flexbox-container">
-        <Navigation class="flexbox-item" />
-        <Chart />
+      <div className="flexbox-container">
+        
+        <Chart className="analytics-chart"/>
       </div>
     </Wrapper>
   )
