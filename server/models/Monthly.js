@@ -5,14 +5,16 @@ const monthlySchema = new Schema({
     type: DataTypes.INTEGER,
     required: true,
   },
-  Monthly_Expenses: {
+  expense: {
     type: DataTypes.DECIMAL,
     required: true,
   },
-  Monthly_Income: {
+  income: {
     type: DataTypes.DECIMAL,
     required: true,
   },
+
+
   Monthly_Savings: {
     type: DataTypes.DECIMAL,
     required: true,
@@ -32,6 +34,9 @@ const monthlySchema = new Schema({
 
 
 
+  transaction_id: { type: DataTypes.INTEGER, required: true },
+
+});
 
 
 
