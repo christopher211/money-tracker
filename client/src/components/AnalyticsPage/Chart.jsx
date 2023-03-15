@@ -28,7 +28,7 @@ export const options = {
     },
     title: {
       display: true,
-      text: 'Chart.js Bar Chart',
+      text: 'Money by Month',
     },
   },
 };
@@ -51,12 +51,12 @@ export const data = {
     {
       label: 'Expense',
       data: expenseData,
-      backgroundColor: 'rgba(255, 99, 132, 0.5)',
+      backgroundColor: 'rgba(237, 107, 90)',
     },
     {
       label: 'Income',
       data: labels.map(() => 500),
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+      backgroundColor: 'rgba(51, 124, 160)',
     },
   ],
 };
