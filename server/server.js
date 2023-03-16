@@ -28,6 +28,7 @@ const transactionsRoutes = require('./routes/transactions');
 app.use('/api', analyticsRoutes);
 app.use('/api', accountRoutes);
 app.use('/api', transactionsRoutes);
+app.use('/api/analytics', analyticsRoutes);
 
 db.once('open', () => {
   app.listen(PORT, () => console.log(`Now listening on localhost: ${PORT}`));
