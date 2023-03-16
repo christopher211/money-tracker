@@ -8,7 +8,7 @@ function AnalyticView() {
   return (
 <>
 
-<Card className="col-5 dash-item ">
+<Card xs={12} md={12} lg={6} className="dash-item ">
       <h1>Analytics Chart</h1>
       <Chart />
       </Card>
