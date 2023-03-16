@@ -26,7 +26,7 @@
   Alex Griffitts, Clay Andemar, Cong Thanh Pham, Mugees Khaki
 
 ## Deployed
-  
+  [link](https://expense-trackerr.herokuapp.com/)
 
   ### Screenshot
   ![Screenshot](../screenshots/dashboard.png)
