@@ -26,7 +26,7 @@
   Alex Griffitts, Clay Andemar, Cong Thanh Pham, Mugees Khaki
 
 ## Deployed
-  [Link]()
+  
 
   ### Screenshot
   ![Screenshot](../screenshots/dashboard.png)
