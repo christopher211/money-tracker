@@ -8,7 +8,7 @@ function TransView() {
 
   return (
 <>
-<Card className=" justify-content-center dash-item">
+<Card xs={12} md={12} lg={6} className=" justify-content-center dash-item">
       <h1>Recent Transactions</h1>
       <RecentTransactions />
     </Card>
