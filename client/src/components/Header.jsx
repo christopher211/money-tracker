@@ -9,7 +9,7 @@ const Header = () => {
       <h1 className="page-name-h1">
         {" "}
         <a className="page-name" href="/">
-          Spend Sense
+          Money Tracker
         </a>
       </h1>
       <img

@@ -79,7 +79,10 @@ const Profile = ({ user }) => {
   };
 
   const handleCreateWallet = useCallback(async () => {
+    console.log(user);
     walletForm.user = { _id: user._id };
+    console.log(walletForm);
+
     if (!validateFormData(walletForm)) {
       return;
     }
@@ -103,7 +106,7 @@ const Profile = ({ user }) => {
       });
       handleCloseModal();
     }
-  }, [user._id, validateFormData, walletForm]);
+  }, [user, validateFormData, walletForm]);
 
   const handleLogout = useCallback(() => {
     Swal.fire({

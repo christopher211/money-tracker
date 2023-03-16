@@ -24,6 +24,7 @@ const Account = (props) => {
         }
 
         const user = await response.json();
+        console.log("Account", user);
         setUserData(user);
       } catch (err) {
         console.error(err);
